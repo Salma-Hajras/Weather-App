@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyVibe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">SkyVibe</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="impacts.html">Impacts</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button id="themeToggle" class="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="header hero">
+      <h1>The Climate Is Changing — Are You Ready?</h1>
+      <p>
+        Explore the causes, consequences, and real solutions shaping our
+        planet’s future.
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="weather-section">
+        <h2>Check Real-Time Weather</h2>
+
+        <div class="weather-search">
+          <input type="text" id="cityInput" placeholder="Enter city name..." />
+          <button id="searchBtn">Search</button>
+
+          <!-- هنا الزرارين للتحويل بين °C و °F -->
+          <div class="temp-toggle">
+            <button id="celsiusBtn" class="active">°C</button>
+            <button id="fahrenheitBtn">°F</button>
+          </div>
+        </div>
+
+        <div id="weatherResult" class="weather-result"></div>
+      </section>
+      <section class="climate-info">
+        <h2>Why Climate Change Matters</h2>
+        <p>
+          Climate change is not a distant threat — it is happening now. Rising
+          global temperatures, extreme weather events, melting ice caps, and
+          rising sea levels are already affecting communities around the world.
+        </p>
+
+        <div class="climate-points">
+          <div class="point">
+            <h3>
+              <i class="fa-solid fa-temperature-high"></i> Rising Temperatures
+            </h3>
+            <p>
+              Global temperatures continue to increase, leading to heatwaves and
+              ecosystem disruption.
+            </p>
+          </div>
+
+          <div class="point">
+            <h3><i class="fa-solid fa-water"></i> Sea Level Rise</h3>
+            <p>
+              Melting glaciers and polar ice are causing sea levels to rise,
+              threatening coastal cities.
+            </p>
+          </div>
+
+          <div class="point">
+            <h3><i class="fa-solid fa-bolt"></i> Extreme Weather</h3>
+            <p>
+              Storms, floods, and wildfires are becoming more frequent and
+              intense worldwide.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-links">
+        <div class="card"><a href="impacts.html">Explore Impacts</a></div>
+        <div class="card"><a href="solutions.html">Learn Solutions</a></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 SkyVibe. All rights reserved.</p>
+    </footer>
+
+    <script src="JS/main.js"></script>
+  </body>
+</html>
